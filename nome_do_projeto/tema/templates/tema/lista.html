@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lista</title>
+</head>
+<body>
+    <h1>Dados cadastrados</h1>
+    <table>
+        <tr>
+            <th>Campo 1</th>
+            <th>Campo 2</th>
+        </tr>
+        {% for item in dados %}
+        <tr>
+            <td>{{ item.campo1 }}</td>
+            <td>{{ item.campo2 }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

@@ -40,6 +40,10 @@ INSTALLED_APPS = [
     "tema"
 ]
 
+LOGIN_REDIRECT_URL = '/tema/home/'
+LOGOUT_REDIRECT_URL = '/accounts/login/'
+
+
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
@@ -123,5 +127,5 @@ STATIC_URL = "static/"
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 CSRF_TRUSTED_ORIGINS = [
     'https://localhost:8000',
-    'http://localhost:8000',  # Include HTTP if you're testing without HTTPS
+    'https://127.0.0.1:8000',
 ]
