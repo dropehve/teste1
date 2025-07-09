@@ -37,7 +37,8 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
-    "tema"
+    "usuario",
+    "tema",
 ]
 
 LOGIN_REDIRECT_URL = '/tema/home/'
