@@ -1,0 +1,8 @@
+<h2>Resultado da busca</h2>
+<ul>
+{% for item in resultados %}
+    <li>{{ item.nome }} - {{ item.outro_campo }}</li>
+{% empty %}
+    <li>Nenhum resultado encontrado.</li>
+{% endfor %}
+</ul>
