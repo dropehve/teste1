@@ -10,8 +10,8 @@ def sua_view(request):
     return render(request, 'tema/sua_pagina.html')
 
 from django.shortcuts import render
-from .models import SeuModelo  # substitua pelo nome real do seu modelo
+from .models import Lesao  # substitua pelo nome real do seu modelo
 
 def listar_dados(request):
-    dados = SeuModelo.objects.all()
+    dados = Lesao.objects.all()
     return render(request, 'tema/lista.html', {'dados': dados})
