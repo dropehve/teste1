@@ -1,21 +1,29 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Lista</title>
+    <title>Lista de Lesões</title>
 </head>
 <body>
-    <h1>Dados cadastrados</h1>
-    <table>
+    <h1>Lesões cadastradas</h1>
+    <table border= "1">
         <tr>
-            <th>Campo 1</th>
-            <th>Campo 2</th>
+            <th>Nome</th>
+            <th>Parte Afetada</th>
+            <th>Intensidade</th>
+            <th>Tempo de Recuperação</th>
         </tr>
         {% for item in dados %}
         <tr>
-            <td>{{ item.campo1 }}</td>
-            <td>{{ item.campo2 }}</td>
+            <td>{{ lesao.nome }}</td>
+            <td>{{ lesao.parte_afetada }}</td>
+            <td>{{ lesao.intensidade }}</td>
+            <td>{{ lesao.tempo_medio_recuperacao}}</td>
+        </tr>
+    	{% empty %}
+        <tr>
+            <td colspan="4">Nenhuma lesão cadastrada.</td>
         </tr>
         {% endfor %}
     </table>
 </body>
-</html>
+</html
